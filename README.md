@@ -1,148 +1,86 @@
 
-### 🎯 **IELTS Audio Bot**  
-A Speech-to-Text based IELTS Practice Application using Flutter & FastAPI  
+# IELTS Audio Bot 🎙️  
+**Proprietary Software by Shreerang Kolhe**  
 
 ---
 
-## 📌 Overview
-IELTS Audio Bot is an AI-based app that helps users practice **IELTS Speaking** by recording their answers to various questions and converting the speech into text. The app provides instant feedback on the recorded audio to improve user performance.
+## Description  
+AI-powered IELTS Speaking Practice Bot that helps users **practice speaking prompts** by generating dynamic questions and allowing **audio recording** directly from the app.
 
 ---
 
-## 🛠️ Tech Stack
-### Frontend:
-- Flutter (Audio Recording + HTTP API Calls)
-- Dart
-
-### Backend:
-- FastAPI
-- SpeechRecognition API
-- Python
+## 🔑 Features  
+- 🎙️ Audio Recording Feature  
+- 🤖 AI-Based **Speaking Prompt Generator** using OpenAI  
+- 🔥 Seamless Integration of **Flutter + Flask API**  
+- 📄 Download Audio Files Locally  
+- Modern & User-Friendly Interface  
 
 ---
 
-## 🎯 Features
-- Audio Recording 🎙️
-- Automatic Speech-to-Text Conversion
-- Instant Feedback System
-- API Integration
-- Simple UI for Practice
+## 💻 Tech Stack  
+
+| Technology | Purpose               |
+|------------|-----------------------|
+| Flutter    | Frontend UI + Audio Recording  
+| Flask      | Backend API + Prompt Generation  
+| OpenAI API | AI-Based Prompt Generation  
+| SQLite     | Local Storage (Audio Files)  
 
 ---
 
-## 📌 Folder Structure
-```
-├── lib/
-│   ├── main.dart           # Entry Point
-│   ├── screens/
-│   │   └── home_screen.dart # Main UI Screen
-│   ├── services/
-│   │   └── api_service.dart # API Integration
-│   └── widgets/
-│       └── record_button.dart # Audio Record Button
-└── pubspec.yaml            # Dependencies
-```
+## 📌 Installation  
 
----
-
-## 🔑 Installation
-### Clone the Repository
+### 1. Clone the Repository  
 ```bash
 git clone https://github.com/iamShreerang/ielts_bot.git
-cd IELTS-Bot
+cd ielts_bot
 ```
 
-### Install Dependencies
+### 2. Backend Setup  
 ```bash
-flutter pub get
+cd backend  
+pip install -r requirements.txt  
+python app.py  
 ```
 
-### Run the App
+### 3. Flutter App Setup  
 ```bash
-flutter run
+cd ..  
+flutter pub get  
+flutter run  
 ```
 
 ---
 
-## 🌐 API Configuration
-Modify the **API URL** in:
-```dart
-String apiUrl = "http://10.0.2.2:5000/record_audio";
+## 🏗️ Folder Structure  
+
+```bash
+├─ app/                # Flutter Mobile App  
+│  ├─ lib/             # Flutter Code  
+│  └─ pubspec.yaml     # Flutter Dependencies  
+├─ backend/            # Flask Backend  
+│  ├─ app.py           # Flask API  
+│  ├─ requirements.txt  # Backend Dependencies  
+└─ README.md           # Documentation
 ```
 
 ---
 
-## 🔥 API Response
-### Example Request:
-```dart
-{
-  "audio": "audio_file.wav"
-}
-```
-
-### Example Response:
-```json
-{
-  "transcript": "My name is Shreerang Kolhe and I want to study abroad.",
-  "score": 8.0
-}
-```
+## 📜 License  
+This project is licensed under the **Shreerang Kolhe Proprietary Software License v1.0**.  
 
 ---
 
-## 🎯 How It Works
-1. Press the **Record Button** 🎙️
-2. Audio will be recorded
-3. Audio is sent to the FastAPI backend
-4. Backend converts Audio → Text
-5. Response will be shown on the screen
+## 🔥 Why Proprietary License?  
+This software is developed entirely by **Shreerang Kolhe** 💪, and **any unauthorized use, modification, or distribution is strictly prohibited** without the owner's permission.
 
 ---
 
-## 🚀 Dependencies
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^0.13.5
-  audioplayers: ^1.0.1
-  record: ^4.4.4
-```
+## 📧 Contact  
+| Platform   | Link                              |
+|------------|----------------------------------|
+| LinkedIn   | [iamshreerang](https://www.linkedin.com/in/iamshreerang)  
+| Email      | shreekolhe03@gmail.com  
 
 ---
-
-## 📌 Future Scope
-- Grammar Correction
-- Speaking Score Prediction (Bands)
-- Multilingual Support
-- User Authentication
-
----
-
-## 💪 Contributed by
-| Name               | Role                  |
-|----------------|-----------------------|
-| Shreerang Kolhe | Developer & Backend |
-
----
-
-## 📌 How to Contribute
-1. Fork the Project
-2. Create your Feature Branch
-3. Commit your Changes
-4. Create a Pull Request
-
----
-
-## 📄 License
-This project is licensed under the **MIT License**.
-
----
-
-### 🎯 Contact
-LinkedIn: [Shreerang Kolhe](https://www.linkedin.com/in/iamshreerang)  
-Email: shreekolhe03@gmail.com  
-
----
-
-If you like this project, don't forget to 🌟 the repo! 😊
