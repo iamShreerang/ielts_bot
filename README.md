@@ -48,7 +48,7 @@ IELTS Audio Bot is an AI-based app that helps users practice **IELTS Speaking** 
 ## 🔑 Installation
 ### Clone the Repository
 ```bash
-git clone https://github.com/iamshreerang/IELTS-Bot.git
+git clone https://github.com/iamShreerang/ielts_bot.git
 cd IELTS-Bot
 ```
 
